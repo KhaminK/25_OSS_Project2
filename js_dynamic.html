@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+</head>
+
+<body>
+    <form action="" id="main-form">
+        <input type="text" id = "text-box">
+        <input type="button" value="추가">
+        <input type="reset" value="삭제">
+    </form>
+
+    <script>
+        const myform = document.getElementById("main-form");
+        myform.addEventListener("button", addItem);
+
+        function addItem(event) {
+            textBox = document.getElementById("text-box").value.trim();
+            
+        }
+    </script>
+
+</body>
+
+</html>
