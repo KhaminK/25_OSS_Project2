@@ -85,7 +85,7 @@
 <body>
 
     <h2>회원가입 Form</h2>
-    <form action="index.html">
+    <form action="index.html" id="main-form">
         <!-- 1. 텍스트 입력 -->
         <label for="username">아이디:</label>
         <input type="text" id="username" name="username" placeholder="아이디 입력" required>
@@ -128,13 +128,13 @@
 
 
     <script>
-        myform = document.getElementsByTagName("form");
+        myform = document.getElementById("main-form");
         myform.addEventListener("submit", checkReg);
 
         function checkReg(event) {
             event.preventDefault();
             password = document.getElementById("password").value.trim();
-            passwordReg = /^.{8,}$/
+            passwordReg = /^.{8,}$/;
             if (!passwordReg.test(password)) {
                 alert("Password need to be at least 8 characters");
             } else {

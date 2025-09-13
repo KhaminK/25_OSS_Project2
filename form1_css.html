@@ -142,11 +142,11 @@
             flex-basis: 30%;
         }
 
-        #checkbox1{
+        #checkbox1 {
             margin-top: 20px;
         }
 
-        #checkbox2{
+        #checkbox2 {
             margin-bottom: 20px;
         }
 
@@ -226,7 +226,7 @@
             flex-basis: 25%;
         }
 
-        #user-submit{
+        #user-submit {
             background-color: #0b6efd;
             border-radius: 5px;
             color: white;
@@ -261,13 +261,13 @@
         }
 
 
-        #sidebar div p{
+        #sidebar div p {
             font-size: small;
             color: #959ca2;
         }
 
         ul {
-            border: 1px solid #d7d7d8;  
+            border: 1px solid #d7d7d8;
             padding: 0px;
             border-radius: 5px;
             background-color: white;
@@ -282,40 +282,40 @@
             padding: 5px 15px;
         }
 
-        .price{
+        .price {
             margin-left: auto;
             color: #a8aeb3;
         }
 
-        #promo-section{
+        #promo-section {
             color: #428658;
         }
 
-        #promo-section h4{
+        #promo-section h4 {
             margin-left: auto;
         }
 
-        #promo-section div p{
+        #promo-section div p {
             color: #428658;
         }
 
-        #total{
+        #total {
             height: 30px;
             border-bottom: none;
         }
 
-        #total h3{
+        #total h3 {
             margin-left: auto;
         }
 
-        #promo-code{
+        #promo-code {
             display: flex;
             padding: 10px 5px;
             background-color: white;
             border: 1px solid #d7d7d8;
         }
 
-        #promo-code-text{
+        #promo-code-text {
             height: 40px;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
@@ -323,7 +323,7 @@
             border-right: none;
         }
 
-        #promo-submit{
+        #promo-submit {
             background-color: #6b757e;
             color: white;
             border-top-right-radius: 5px;
@@ -332,20 +332,42 @@
 
         }
 
-        #footer{
+        #footer {
             margin-top: 100px;
             text-align: center;
         }
 
-        #footer p{
+        #footer p {
             color: #778087;
         }
 
-        #footer a{
+        #footer a {
             margin: 20px 10px;
             font-size: small;
         }
+
+        input[type="password"],
+        input[type="email"] {
+            border-radius: 5px;
+            border-color: #d1d3d5;
+            border-style: solid;
+            border-width: 1px;
+            height: 40px;
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        input[type="date"] {
+            width: 40%;
+            padding-left: 10px;
+        }
+
+        textarea{
+            width: 80%;
+        }
+
     </style>
+
 </head>
 
 <body>
@@ -384,7 +406,7 @@
 
                 <div id="email-section" class="section">
                     <label for="email">Email <span class="optional">(Optional)</span></label><br>
-                    <input type="text" id="email" name="email" placeholder="you@example.com">
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
                 </div>
 
                 <div class="section">
@@ -460,7 +482,7 @@
                     </div>
                     <div>
                         <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv">
+                        <input type="password" id="cvv" name="cvv">
                     </div>
                 </div>
                 <hr>
@@ -522,6 +544,13 @@
             <a href="form1.html">Terms</a>
             <a href="form1.html">Support</a>
         </div>
+
+        wecome to give a feedback!<br>
+
+        <form action="index.html">
+            <input type="date"><br>
+            <textarea name="feedBack" id="feedback"></textarea>
+        </form>
     </div>
 
 </body>
